@@ -1,0 +1,42 @@
+// generaliza margenes default navegador
+@mixin resetDefault {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+}
+
+// grilla
+
+// generaliza anchortags
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+// generaliza li tags
+li {
+    list-style-type: none;
+}
+
+// flex row center
+@mixin flexRowCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+// flex column center
+@mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// estilo para cards
+@mixin cardSize($width, $height) {
+    width: $width;
+    height: $height;
+}
